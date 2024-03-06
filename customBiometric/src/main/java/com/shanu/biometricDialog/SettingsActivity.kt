@@ -14,7 +14,7 @@ class SettingsActivity : AppCompatActivity() {
         callCustomBiometricDialog()
     }
 
-    private fun callCustomBiometricDialog() {
+    fun callCustomBiometricDialog() {
         customBiometricDialog =
             CustomBiometricDialog.Builder().isCancelable(true).onBiometricClick {
                 Toast.makeText(this, "Clicked on Biometric.", Toast.LENGTH_SHORT).show()
