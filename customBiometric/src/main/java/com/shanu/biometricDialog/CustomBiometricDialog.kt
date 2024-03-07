@@ -13,6 +13,7 @@ class CustomBiometricDialog : DialogFragment() {
 
     private lateinit var dialogBiometricsBinding: DialogBiometricsBinding
     private lateinit var onBiometricIconClick: () -> Unit
+    private lateinit var dialogTitle: String
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -57,6 +58,11 @@ class CustomBiometricDialog : DialogFragment() {
 
         fun onBiometricClick(action: () -> Unit): Builder {
             customBiometricDialogFragment.onBiometricIconClick = action
+            return this
+        }
+
+        fun setCustomDialogTitle(title: String): Builder {
+            customBiometricDialogFragment.dialogTitle = title
             return this
         }
 

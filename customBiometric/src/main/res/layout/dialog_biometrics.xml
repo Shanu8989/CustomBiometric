@@ -21,11 +21,11 @@
                 android:id="@+id/biometric_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="start"
-                android:text="Please confirm your willingness to share your documents"
+                android:gravity="center"
+                android:text="Identify yourself"
                 android:textColor="#000"
                 android:textSize="15sp"
-                android:visibility="invisible"
+                android:visibility="visible"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,7 +33,7 @@
                 android:id="@+id/biometric_img_txt_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/biometric_outer_border"
                 android:padding="10dp"
